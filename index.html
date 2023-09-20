@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <h1>Here are your 10 random Emails:</h1>
-        <ol>
+        <ol v-if="randomEmails.length === 10">
             <li v-for="email in randomEmails">{{email}}</li>
         </ol>
     </div>
