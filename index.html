@@ -7,10 +7,9 @@
 </head>
 <body>
     <div id="app">
-        <div>
-            <h3>Your new email is:</h3> 
-            {{randomEmails}}
-        </div>
+        <ul>
+            <li v-for="email in randomEmails">{{randomEmails}}</li>
+        </ul>
     </div>
 
     <!--Links to js file, vue cdn and axios cdn-->
