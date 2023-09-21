@@ -11,6 +11,8 @@
         <ol v-if="randomEmails.length === 10">
             <li v-for="email in randomEmails">{{email}}</li>
         </ol>
+        <!--Add message while wainting to load-->
+        <p v-else>Loading...</p>
     </div>
 
     <!--Links to js file, vue cdn and axios cdn-->
